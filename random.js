@@ -5,7 +5,6 @@ let hash = ""
 const hashCode = (string) => {
     let iterations = 10000;
     let hash = crypto.pbkdf2Sync(string, salt, iterations, 512, 'sha512').toString('hex');
-
     return hash;
 };
 
