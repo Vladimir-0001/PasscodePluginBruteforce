@@ -10,7 +10,7 @@ const hashCode = (string) => {
 };
 
 for (let i = 0; i < 10000; i++) {
-    if (hashCode(i.toString()) == hash.toString()){
+    if (hashCode(i.toString()) == hash){
         console.log("The passcode is : "+i);
     }
     
